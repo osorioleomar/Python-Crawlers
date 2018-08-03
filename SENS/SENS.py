@@ -1,11 +1,11 @@
 import requests
 import datetime
 import ctypes
+from bs4 import BeautifulSoup
 
 # now = '27/07/2018'
 now = datetime.datetime.now().strftime("%d/%m/%Y")
 
-from bs4 import BeautifulSoup
 def web(page,WebUrl):
     if(page>0):
         url = WebUrl
